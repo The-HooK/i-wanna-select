@@ -1,4 +1,4 @@
-var elmt = document.getElementsByClassName('SansSelectionTexte');
+var elmt = document.all;
 for (i = 0; i < elmt.length; i++) {
   elmt[i].style.mozUserSelect = '-moz-text';
   elmt[i].style.webkitUserSelect = 'text';
@@ -6,5 +6,6 @@ for (i = 0; i < elmt.length; i++) {
   elmt[i].style.khtmlUserSelect = 'text';
   elmt[i].style.msUserSelect = 'text';
   elmt[i].style.userSelect = 'text';
-  console.log('Now you can select what ever you want ! ;)');
 }
+console.log(elmt.length + ' elements changed.');
+console.log('Now you can select what ever you want ! ;)');
